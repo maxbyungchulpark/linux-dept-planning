@@ -27,37 +27,37 @@
 * Receive `THIS_IP` as a stack variable and pass it as a function argument.
 * Disable LLVM indirect goto warnings when DEPT is enabled (Paran).
 * Introduce `ARCH_THIS_IP` (Paran) — *Needs review: Is this too much?*
-* Investigate the root cause of the binary size increase resulting from Yeorum's `THIS_IP` implementation.
+* Investigate the root cause of the binary size increase resulting from Yeoreum's `THIS_IP` implementation.
 * Raise an issue on LKML: `arch THIS_IP` implementation vs. disabling warnings (Byungchul).
 
 ### Add RT Hang Annotation for DEPT (Paran)
 * `cfs` (un)throttling.
 * Locking priority inheritance.
 
-### Handle Folio Migration Nested Locks (Byungchul, Yeorum)
+### Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
 * Acquire consecutive locks for `src` and `dst` using the same class.
 * Modify DEPT engine to properly handle folio nested locks (Byungchul).
 * Add the `folio_lock_nested()` API (Byungchul).
-* Implement the use of `folio_lock_nested()` (`fs` by Yeorum, `migration` by Byungchul).
+* Implement the use of `folio_lock_nested()` (`fs` by Yeoreum, `migration` by Byungchul).
 
-### Configure Classes Using the Folio Class Configuration API (Yeorum, Byungchul)
+### Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
 * Set default, block file, and regular file classes at appropriate locations.
 * Resolve false positives caused by block-file-use folios and regular-file-use folios.
 ---
 ## DO IT LATER
 
-### Detection in Distributed Machine Environments (Yeorum, Post-Merge)
+### Detection in Distributed Machine Environments (Yeoreum, Post-Merge)
 * Collect data locally on each kernel as currently done.
 * Aggregate the collected dependency information onto a single machine.
 * Recheck the dependency graph at the user level on the aggregating machine.
 * Implement user-level reporting capabilities.
 
-### Leverage DEPT's Resilience to Missing Data for User-Level Processing (Yeorum, Post-Merge)
+### Leverage DEPT's Resilience to Missing Data for User-Level Processing (Yeoreum, Post-Merge)
 * Ultimately offload processing from the kernel to the user space.
 
-### Implement Module DEPT (Yeorum, Post-Merge)
+### Implement Module DEPT (Yeoreum, Post-Merge)
 
-### Implement Class Filter Functionality (Yeorum, Paran)
+### Implement Class Filter Functionality (Yeoreum, Paran)
 * Feature to exclude unwanted classes.
 * Requires review of dynamic debugging.
 * Apply a simple filter (Paran).
