@@ -1,4 +1,4 @@
-# linux-dept-planning
+# DEPT Planning
 
 > ### Collect Multiple Acked-by Tags
 > ### Build Community Consensus on False Positives (via Conferences/Summits)
