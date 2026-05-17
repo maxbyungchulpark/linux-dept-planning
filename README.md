@@ -14,7 +14,7 @@
 ### Prepare for LPC: Discuss Direction for DEPT False Positives (Byungchul)
 * Reach a consensus with the community on the future direction of handling false positives.
 
-### Support `rw_sem` that can be released across contexts (Byungchul)
+### Support `rw_sem` Released Across Contexts (Byungchul)
 
 ### Add Deadlocks to Unit Tests (Paran)
 * Work on `kunit` and `lkdtm`.
