@@ -9,7 +9,7 @@
 
 ## DO IT NOW
 
-> Yunseong + We all
+[Yunseong]
 ### Create repo for testing DEPT and share the url
 ### Add RT Hang Annotation for DEPT (Yunseong)
 * `cfs` (un)throttling.
@@ -17,14 +17,14 @@
 * Review Paran's patch.
 * Make able to handle throttling wait in irq (Byungchul).
 
-> Yeoreum (DL 6/21)
+[Yeoreum] (DL 6/21)
 ### Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
 * Acquire consecutive locks for `src` and `dst` using the same class.
 * Modify DEPT engine to properly handle folio nested locks (Byungchul).
 * Add the `folio_lock_nested()` API (Byungchul).
 * Implement the use of `folio_lock_nested()` (`fs` by Yeoreum, `migration` by Byungchul).
 
-> Byungchul
+[Byungchul]
 ### Rebase DEPT on 7.0 via github
 ### Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
 * Set default, block file, and regular file classes at appropriate locations.
