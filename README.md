@@ -33,8 +33,8 @@
 ### Add RT Hang Annotation for DEPT (Paran)
 * `cfs` (un)throttling.
 * Locking priority inheritance.
-* Review Paran's patch
-* Make able to handle throttling wait in irq (Byungchul)
+* Review Paran's patch.
+* Make able to handle throttling wait in irq (Byungchul).
 
 ### Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
 * Acquire consecutive locks for `src` and `dst` using the same class.
