@@ -6,7 +6,7 @@
 > ### Trigger Hang Issues Using RT & Syzkaller Fuzzing to Test DEPT
 > ### Search for Existing 'task hung/hang' Issues to Validate DEPT
 > ### Submit DEPT Reports to LKML
-
+---
 ## DO IT NOW
 
 ### [Yunseong DL 6/28] Create repo for testing DEPT and share the url
@@ -26,7 +26,7 @@
 ### [Byungchul DL 6/21] Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
 * Set default, block file, and regular file classes at appropriate locations.
 * Resolve false positives caused by block-file-use folios and regular-file-use folios.
-
+---
 ## DO IT SOON
 
 ### Performance optimization using rcu onto DEPT core (Yeoreum)
