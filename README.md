@@ -9,21 +9,21 @@
 
 ## DO IT NOW
 
-### [Yunseong] Create repo for testing DEPT and share the url
-### [Yunseong] Add RT Hang Annotation for DEPT (Yunseong)
+### [Yunseong DL 6/28] Create repo for testing DEPT and share the url
+### [Yunseong DL 6/28] Add RT Hang Annotation for DEPT (Yunseong)
 * `cfs` (un)throttling.
 * Locking priority inheritance.
 * Review Paran's patch.
 * Make able to handle throttling wait in irq (Byungchul).
 
-### [Yeoreum (DL 6/21)] Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
+### [Yeoreum DL 6/21] Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
 * Acquire consecutive locks for `src` and `dst` using the same class.
 * Modify DEPT engine to properly handle folio nested locks (Byungchul).
 * Add the `folio_lock_nested()` API (Byungchul).
 * Implement the use of `folio_lock_nested()` (`fs` by Yeoreum, `migration` by Byungchul).
 
-### [Byungchul] Rebase DEPT on 7.0 via github
-### [Byungchul] Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
+### [Byungchul DL 6/21] Rebase DEPT on 7.0 via github
+### [Byungchul DL 6/21] Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
 * Set default, block file, and regular file classes at appropriate locations.
 * Resolve false positives caused by block-file-use folios and regular-file-use folios.
 
