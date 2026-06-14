@@ -18,8 +18,8 @@
 
 ### [Yeoreum DL 6/21] Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
 * Acquire consecutive locks for `src` and `dst` using the same class.
-* Modify DEPT engine to properly handle folio nested locks (Byungchul).
-* Add the `folio_lock_nested()` API (Byungchul).
+* Modify DEPT engine to properly handle folio nested locks (Byungchul, Yeoreum).
+* Add the `folio_lock_nested()` API (Byungchul, Yeoreum).
 * Implement the use of `folio_lock_nested()` (`fs` by Yeoreum, `migration` by Byungchul).
 
 ### [Byungchul DL 6/21] Rebase DEPT on 7.0 via github
