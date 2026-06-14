@@ -1,5 +1,3 @@
-# DEPT Planning
-
 > ### Collect Multiple Acked-by Tags
 > ### Build Community Consensus on False Positives (via Conferences/Summits)
 > ### Collect Useful DEPT Reports Through Various Testing
