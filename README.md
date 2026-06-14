@@ -9,6 +9,31 @@
 
 ## DO IT NOW
 
+> Yunseong + We all
+### Create repo for testing DEPT and share the url
+### Add RT Hang Annotation for DEPT (Yunseong)
+* `cfs` (un)throttling.
+* Locking priority inheritance.
+* Review Paran's patch.
+* Make able to handle throttling wait in irq (Byungchul).
+
+> Yeoreum (DL 6/21)
+### Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
+* Acquire consecutive locks for `src` and `dst` using the same class.
+* Modify DEPT engine to properly handle folio nested locks (Byungchul).
+* Add the `folio_lock_nested()` API (Byungchul).
+* Implement the use of `folio_lock_nested()` (`fs` by Yeoreum, `migration` by Byungchul).
+
+> Byungchul
+### Rebase DEPT on 7.0 via github
+### Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
+* Set default, block file, and regular file classes at appropriate locations.
+* Resolve false positives caused by block-file-use folios and regular-file-use folios.
+
+## DO IT SOON
+
+### Performance optimization using rcu onto DEPT core (Yeoreum)
+
 ### Contribute `dept.md` for AI md to github.com/masoncl/review-prompts
 
 ### Prepare for LPC: Discuss Direction for DEPT False Positives (Byungchul)
@@ -16,7 +41,7 @@
 
 ### Support `rw_sem` Released Across Contexts (Byungchul)
 
-### Add Deadlocks to Unit Tests (Paran)
+### Add Deadlocks to Unit Tests (Yunseong)
 * Work on `kunit` and `lkdtm`.
 * Add `pg flags` to `lkdtm`.
 * Add `folio_lock` vs `wait_for_completion` to `lkdtm`.
@@ -25,26 +50,10 @@
 ### Resolve LLVM `THIS_IP` Complain Issue (Byungchul)
 * A workaround or fix is required to enable DEPT under LLVM.
 * Receive `THIS_IP` as a stack variable and pass it as a function argument.
-* Disable LLVM indirect goto warnings when DEPT is enabled (Paran).
+* Disable LLVM indirect goto warnings when DEPT is enabled (Yunseong).
 * Introduce `ARCH_THIS_IP` (Paran) — *Needs review: Is this too much?*
 * Investigate the root cause of the binary size increase resulting from Yeoreum's `THIS_IP` implementation.
 * Raise an issue on LKML: `arch THIS_IP` implementation vs. disabling warnings (Byungchul).
-
-### Add RT Hang Annotation for DEPT (Paran)
-* `cfs` (un)throttling.
-* Locking priority inheritance.
-* Review Paran's patch.
-* Make able to handle throttling wait in irq (Byungchul).
-
-### Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
-* Acquire consecutive locks for `src` and `dst` using the same class.
-* Modify DEPT engine to properly handle folio nested locks (Byungchul).
-* Add the `folio_lock_nested()` API (Byungchul).
-* Implement the use of `folio_lock_nested()` (`fs` by Yeoreum, `migration` by Byungchul).
-
-### Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
-* Set default, block file, and regular file classes at appropriate locations.
-* Resolve false positives caused by block-file-use folios and regular-file-use folios.
 ---
 ## DO IT LATER
 
