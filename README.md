@@ -14,7 +14,7 @@
 * Review Paran's patch.
 * Make able to handle throttling wait in irq (Byungchul).
 
-### [Yeoreum DL 6/21] Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
+### [Yeoreum DL 6/28] Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
 * Acquire consecutive locks for `src` and `dst` using the same class.
 * Modify DEPT engine to properly handle folio nested locks (Byungchul, Yeoreum).
 * Add the `folio_lock_nested()` API (Byungchul, Yeoreum).
