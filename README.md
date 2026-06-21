@@ -21,7 +21,7 @@
 * Implement the use of `folio_lock_nested()` (`fs` by Yeoreum, `migration` by Byungchul).
 
 ### [Byungchul DL 6/21] Rebase DEPT on 7.0 via github
-### [Byungchul DL 6/21] Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
+### [Byungchul DL 6/28] Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
 * Set default, block file, and regular file classes at appropriate locations.
 * Resolve false positives caused by block-file-use folios and regular-file-use folios.
 
