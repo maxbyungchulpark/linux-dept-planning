@@ -8,7 +8,7 @@
 ## DO IT NOW
 
 ### [Yunseong DL 7/19] Add RT Hang Annotation for DEPT (Yunseong)
-* reply to Byungchul
+* Reply to Byungchul
 * `cfs` (un)throttling.
 * Locking priority inheritance.
 * Review Paran's patch.
