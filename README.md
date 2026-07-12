@@ -16,17 +16,20 @@
 
 ### [Byungchul DL 7/19] Apply Sashiko's review to DEPT20
 
-### [Byungchul DL 6/28] Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
+### [Yeoreum DL 7/26] Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
 * Set default, block file, and regular file classes at appropriate locations.
 * Resolve false positives caused by block-file-use folios and regular-file-use folios.
 
-### [Yeoreum DL 6/28] Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
+### [Yeoreum DL 7/26] Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
 * Acquire consecutive locks for `src` and `dst` using the same class.
 * Modify DEPT engine to properly handle folio nested locks (Byungchul, Yeoreum).
 * Add the `folio_lock_nested()` API (Byungchul, Yeoreum).
 * Implement the use of `folio_lock_nested()` (`fs` by Yeoreum, `migration` by Byungchul).
 
+## DONE
+
 ### [Byungchul Done] Rebase DEPT on 7.0 via github
+
 ### [Yunseong Done] Create repo for testing DEPT and share the url
 
 ## DO IT SOON
