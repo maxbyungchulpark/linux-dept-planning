@@ -14,7 +14,7 @@
 * Review Paran's patch.
 * Make able to handle throttling wait in irq (Byungchul).
 
-### [Byungchul DL 7/19] Apply Sashiko's review to DEPT20
+### [Byungchul DL 7/19] Apply Sashiko's Review to DEPT20
 
 ### [Yeoreum DL 7/26] Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
 * Set default, block file, and regular file classes at appropriate locations.
