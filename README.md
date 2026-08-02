@@ -7,7 +7,7 @@
 
 ## DO IT NOW
 
-### [Yunseong DL ?/?] Resolve LLVM `THIS_IP` Complain Issue
+### [Yunseong DL 8/16] Resolve LLVM `THIS_IP` Complain Issue
 * A workaround or fix is required to enable DEPT under LLVM.
 * Receive `THIS_IP` as a stack variable and pass it as a function argument.
 * Disable LLVM indirect goto warnings when DEPT is enabled (Yunseong).
@@ -15,24 +15,24 @@
 * Investigate the root cause of the binary size increase resulting from Yeoreum's `THIS_IP` implementation.
 * Raise an issue on LKML: `arch THIS_IP` implementation vs. disabling warnings (Byungchul).
 
-### [Yunseong DL 7/19] Add RT Hang Annotation for DEPT
+### [Yunseong DL 8/16] Add RT Hang Annotation for DEPT
 * Reply to Byungchul
 * `cfs` (un)throttling.
 * Locking priority inheritance.
 * Review Paran's patch.
 * Make able to handle throttling wait in irq (Byungchul).
 
-### [Byungchul DL 7/26] Apply Sashiko's Feedback to DEPT20
+### [Byungchul DL 8/16] Apply Sashiko's Feedback to DEPT20
 
-### [Yeoreum DL 7/26] Ask David to Review DEPT
+### [Yeoreum DL 8/16] Ask David to Review DEPT
 
-### [Byungchul, Yeoreum DL 7/26] Check the Report Obtained from Yunseong
+### [Byungchul, Yeoreum DL 8/16] Check the Report Obtained from Yunseong
 
-### [Yeoreum, Byungchul DL 7/26] Configure Classes Using the Folio Class Configuration API
+### [Yeoreum, Byungchul DL 8/16] Configure Classes Using the Folio Class Configuration API
 * Set default, block file, and regular file classes at appropriate locations.
 * Resolve false positives caused by block-file-use folios and regular-file-use folios.
 
-### [Yeoreum, Byungchul DL 7/26] Handle Folio Migration Nested Locks
+### [Yeoreum, Byungchul DL 8/16] Handle Folio Migration Nested Locks
 * Acquire consecutive locks for `src` and `dst` using the same class.
 * Modify DEPT engine to properly handle folio nested locks (Byungchul, Yeoreum).
 * Add the `folio_lock_nested()` API (Byungchul, Yeoreum).
