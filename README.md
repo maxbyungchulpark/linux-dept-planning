@@ -15,7 +15,7 @@
 * Investigate the root cause of the binary size increase resulting from Yeoreum's `THIS_IP` implementation.
 * Raise an issue on LKML: `arch THIS_IP` implementation vs. disabling warnings (Byungchul).
 
-### [Yunseong DL 8/16] Add RT Hang Annotation for DEPT
+### [Yunseong DL 8/16] Add RT-Hung Annotation for DEPT
 * Reply to Byungchul
 * `cfs` (un)throttling.
 * Locking priority inheritance.
