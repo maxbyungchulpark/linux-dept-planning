@@ -14,7 +14,7 @@
 * Review Paran's patch.
 * Make able to handle throttling wait in irq (Byungchul).
 
-### [Byungchul DL 7/26] Apply Sashiko's Review to DEPT20
+### [Byungchul DL 7/26] Apply Sashiko's Feedback to DEPT20
 
 ### [Yeoreum DL 7/26] Ask David to Review DEPT (Yeoreum)
 
