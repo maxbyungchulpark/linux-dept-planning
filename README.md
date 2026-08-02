@@ -16,6 +16,8 @@
 
 ### [Byungchul DL 7/26] Apply Sashiko's Review to DEPT20
 
+### [Yeoreum DL 7/26] Ask David to Review DEPT (Yeoreum)
+
 ### [Yeoreum DL 7/26] Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
 * Set default, block file, and regular file classes at appropriate locations.
 * Resolve false positives caused by block-file-use folios and regular-file-use folios.
