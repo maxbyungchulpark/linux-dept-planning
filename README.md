@@ -7,7 +7,15 @@
 
 ## DO IT NOW
 
-### [Yunseong DL 7/19] Add RT Hang Annotation for DEPT (Yunseong)
+### [Yunseong DL ?/?] Resolve LLVM `THIS_IP` Complain Issue
+* A workaround or fix is required to enable DEPT under LLVM.
+* Receive `THIS_IP` as a stack variable and pass it as a function argument.
+* Disable LLVM indirect goto warnings when DEPT is enabled (Yunseong).
+* Introduce `ARCH_THIS_IP` (Paran) — *Needs review: Is this too much?*
+* Investigate the root cause of the binary size increase resulting from Yeoreum's `THIS_IP` implementation.
+* Raise an issue on LKML: `arch THIS_IP` implementation vs. disabling warnings (Byungchul).
+
+### [Yunseong DL 7/19] Add RT Hang Annotation for DEPT
 * Reply to Byungchul
 * `cfs` (un)throttling.
 * Locking priority inheritance.
@@ -16,15 +24,15 @@
 
 ### [Byungchul DL 7/26] Apply Sashiko's Feedback to DEPT20
 
-### [Yeoreum DL 7/26] Ask David to Review DEPT (Yeoreum)
+### [Yeoreum DL 7/26] Ask David to Review DEPT
 
 ### [Byungchul, Yeoreum DL 7/26] Check the Report Obtained from Yunseong
 
-### [Yeoreum DL 7/26] Configure Classes Using the Folio Class Configuration API (Yeoreum, Byungchul)
+### [Yeoreum, Byungchul DL 7/26] Configure Classes Using the Folio Class Configuration API
 * Set default, block file, and regular file classes at appropriate locations.
 * Resolve false positives caused by block-file-use folios and regular-file-use folios.
 
-### [Yeoreum DL 7/26] Handle Folio Migration Nested Locks (Byungchul, Yeoreum)
+### [Yeoreum, Byungchul DL 7/26] Handle Folio Migration Nested Locks
 * Acquire consecutive locks for `src` and `dst` using the same class.
 * Modify DEPT engine to properly handle folio nested locks (Byungchul, Yeoreum).
 * Add the `folio_lock_nested()` API (Byungchul, Yeoreum).
@@ -38,43 +46,35 @@
 
 ## DO IT SOON
 
-### Performance optimization using rcu onto DEPT core (Yeoreum)
+### [Yeoreum] Performance optimization using rcu onto DEPT core
 
 ### Contribute `dept.md` for AI md to github.com/masoncl/review-prompts
 
-### Prepare for LPC: Discuss Direction for DEPT False Positives (Byungchul)
+### [Byungchul] Prepare for LPC: Discuss Direction for DEPT False Positives
 * Reach a consensus with the community on the future direction of handling false positives.
 
-### Support `rw_sem` Released Across Contexts (Byungchul)
+### [Byungchul] Support `rw_sem` Released Across Contexts
 
-### Add Deadlocks to Unit Tests (Yunseong)
+### [Yunseong] Add Deadlocks to Unit Tests
 * Work on `kunit` and `lkdtm`.
 * Add `pg flags` to `lkdtm`.
 * Add `folio_lock` vs `wait_for_completion` to `lkdtm`.
 * Add `rw_sem` to `lkdtm`.
 
-### Resolve LLVM `THIS_IP` Complain Issue (Byungchul)
-* A workaround or fix is required to enable DEPT under LLVM.
-* Receive `THIS_IP` as a stack variable and pass it as a function argument.
-* Disable LLVM indirect goto warnings when DEPT is enabled (Yunseong).
-* Introduce `ARCH_THIS_IP` (Paran) — *Needs review: Is this too much?*
-* Investigate the root cause of the binary size increase resulting from Yeoreum's `THIS_IP` implementation.
-* Raise an issue on LKML: `arch THIS_IP` implementation vs. disabling warnings (Byungchul).
-
 ## DO IT LATER
 
-### Detection in Distributed Machine Environments (Yeoreum, Post-Merge)
+### [Yeoreum] Detection in Distributed Machine Environments (Post-Merge)
 * Collect data locally on each kernel as currently done.
 * Aggregate the collected dependency information onto a single machine.
 * Recheck the dependency graph at the user level on the aggregating machine.
 * Implement user-level reporting capabilities.
 
-### Leverage DEPT's Resilience to Missing Data for User-Level Processing (Yeoreum, Post-Merge)
+### [Yeoreum] Leverage DEPT's Resilience to Missing Data for User-Level Processing (Post-Merge)
 * Ultimately offload processing from the kernel to the user space.
 
-### Implement Module DEPT (Yeoreum, Post-Merge)
+### [Yeoreum] Implement Module DEPT (Post-Merge)
 
-### Implement Class Filter Functionality (Yeoreum, Paran)
+### [Yeoreum, Paran] Implement Class Filter Functionality
 * Feature to exclude unwanted classes.
 * Requires review of dynamic debugging.
 * Apply a simple filter (Paran).
