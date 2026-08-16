@@ -7,6 +7,8 @@
 
 ## DO IT NOW
 
+### [Yunseong DL 8/16] Kernel CI Hang Issues
+
 ### [Yunseong DL 8/16] Resolve LLVM `THIS_IP` Complain Issue
 * A workaround or fix is required to enable DEPT under LLVM.
 * Receive `THIS_IP` as a stack variable and pass it as a function argument.
