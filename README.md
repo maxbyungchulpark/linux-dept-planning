@@ -7,15 +7,9 @@
 
 ## DO IT NOW
 
-### [Yunseong DL 8/16] Kernel CI Hang Issues
+### [Yunseong DL 11/1] Use local review-prompt AI for DEPT and Lockdep
 
-### [Yunseong DL 8/16] Resolve LLVM `THIS_IP` Complain Issue
-* A workaround or fix is required to enable DEPT under LLVM.
-* Receive `THIS_IP` as a stack variable and pass it as a function argument.
-* Disable LLVM indirect goto warnings when DEPT is enabled (Yunseong).
-* Introduce `ARCH_THIS_IP` (Paran) — *Needs review: Is this too much?*
-* Investigate the root cause of the binary size increase resulting from Yeoreum's `THIS_IP` implementation.
-* Raise an issue on LKML: `arch THIS_IP` implementation vs. disabling warnings (Byungchul).
+### [Yunseong DL 8/16] Kernel CI Hang Issues
 
 ### [Yunseong DL 8/16] Add RT-Hung Annotation for DEPT
 * Reply to Byungchul
@@ -41,6 +35,14 @@
 * Implement the use of `folio_lock_nested()` (`fs` by Yeoreum, `migration` by Byungchul).
 
 ## DONE
+
+### [Yunseong DL 8/16] Resolve LLVM `THIS_IP` Complain Issue
+* A workaround or fix is required to enable DEPT under LLVM.
+* Receive `THIS_IP` as a stack variable and pass it as a function argument.
+* Disable LLVM indirect goto warnings when DEPT is enabled (Yunseong).
+* Introduce `ARCH_THIS_IP` (Paran) — *Needs review: Is this too much?*
+* Investigate the root cause of the binary size increase resulting from Yeoreum's `THIS_IP` implementation.
+* Raise an issue on LKML: `arch THIS_IP` implementation vs. disabling warnings (Byungchul).
 
 ### [Byungchul Done] Rebase DEPT on 7.0 via github
 
